@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+class Print {
+	public:            //public  specifier which can be accecced anywhere in the code
+		void show(){
+			cout<<"Hello I am learning OOP's :"<<endl;
+			
+		}
+
+};
+class Person{
+	private:      //private specifier which can be accessed in it's class only
+	
+		int age;
+		int percent;
+		public:
+	void old(){
+		
+		age=50;
+		cout<<"My age is :"<<age<<endl;
+		
+	}
+	void college(){
+		percent =80;
+		cout<<"My percentage in 3rd semester is :"<<percent<<endl;
+		
+	}
+};
+class New{
+	protected:    //Protected  can be accessed in its class as well as in it's inherited classes
+	
+		int standard;
+		public:
+		void fun(){
+			standard=10;
+			cout<<"I am in "<<standard<<"standard:"<<endl;
+			
+		}
+};
+int main(){
+	Print obj;
+	Person obj1;
+	New obj2;
+	obj2.fun();
+	obj.show();
+	obj1.old();
+	obj1.college();
+	
+	return 0;
+}
